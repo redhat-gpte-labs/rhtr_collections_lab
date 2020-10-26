@@ -27,29 +27,3 @@
 :markup-in-source: verbatim,attributes,quotes
 :show_solution: true
 
-. Sign in to Red Hat Ansible tower Web UI *{TOWER_URL}* as `{TOWER_ADMIN_USER}` user and password `{TOWER_ADMIN_PASSWORD}`.
-
-. On the left side pane select *Jobs*.
-
-. You will be able to see job `$JOBID-App Deployer - Test Env` ruuning. 
-
-. You will be to see job has been executed with *Playbook Run* *Webhook* action. 
-
-. Click on the `$JOBID-App Deployer - Test Env` to see the details. 
-
-
-[cols="1a",grid=none,width=80%]
-|===
-^| image::images/04_tower_job_status.png[]
-^| Figure 1 - Ansible Tower Job Status
-|===
-
-
-. Verify accessing the application using testserver web url `testserver.{GUID}.{OSP_DOMAIN}`.
-. Enter `root` in the box to then click `Submit`. 
-
-[cols="1a",grid=none,width=80%]
-|===
-^| image::images/05_test_smoke_test.png[]
-^| Figure 2 - Smoke Test
-|===

@@ -26,15 +26,3 @@
 :markup-in-source: verbatim,attributes,quotes
 :show_solution: true
 
-In this section you will explore Gitlab UI.
-
-. Sign in to Gitlab web UI.
-+
-Open browser and type *{GITLAB_URL}*, Enter your login details `{GITLAB_USERNAME}` and `{GITLAB_PASSWORD}`, as provided.
-
-
-[cols="1a",grid=none,width=75%]
-|===
-^| image::images/03_gitlab_login.png[]
-^| Figure 1 - Gitlab WebUI
-|===
