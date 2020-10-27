@@ -44,39 +44,3 @@ Open browser and type *{TOWER_URL}*
 |===
 
 
-== Browse Inventory
-
-
-In this section, explore the inventory created during the Ansible Tower installation and determine its managed hosts.
-
-. Under the *RESOURCES* section of the left navigation bar, click *Inventories*.
-* Expect to see an inventory named `{inventory_prod}` and `{inventory_test}` that was created as part of lab setup.
-
-. Click on the both inventories one by one to view the details of the inventories.
-* Under the *GROUPS* section of respective inventories, expect to see that each inventory is composed of groups e.g under `{inventory_test}` *testservers* group.
-
-* To explore further click on group name to list hosts.
-
-== View Credential Details
-
-In this section, explore the details of the credential created as part of lab setup.
-
-. Under the *RESOURCES* section of the left navigation bar, click *Credentials*.
-
-. Expect to see following credentials -
-+
-|===
-| Name | Credential Type | Description
-| gitlab_credential | scm | for project sync 
-| cloud_credential | openstack | for openstack api authentication
-| host_credential | machine | for ssh username and key to connect hosts
-|===
-
-. Click on credentials one by one to view the details of the credentials.
-
-
-[cols="1a",grid=none,width=80%]
-|===
-^| image::images/04_tower_credentials.png[]
-^| Figure 2 - Ansible Tower Credentials
-|===

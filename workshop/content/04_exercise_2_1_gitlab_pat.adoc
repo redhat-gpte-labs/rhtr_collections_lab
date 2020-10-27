@@ -26,37 +26,3 @@
 :markup-in-source: verbatim,attributes,quotes
 :show_solution: true
 
-In this section, you will create Gitlab personal access token.
-
-. Sign In to Gitlab web UI.
-
-. Open the browser and type *{GITLAB_URL}*, Enter your login details `{GITLAB_USERNAME}` and `{GITLAB_PASSWORD}`, as provided.
-
-. In the upper-right corner, click on your *avatar* and select *Settings*.
-
-. On the *User Settings* menu, select *Access Tokens*.
-
-. Enter the name *Gitops Lab* and optional expiry date for the token.
-
-. Choose the *desired scopes*. For the Webhook Purpose you need to only check the boxes beside *read_api* and *read_repository*.
-
-. For more information regarding *desired scopes* refer link:https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#limiting-scopes-of-a-personal-access-token[desired scopes] .
-
-. Click the Create personal access token button.
-
-. Save the personal access token somewhere safe. If you navigate away or refresh your page, and you did not save the token, you must create a new one.
-
-
-
-[cols="1a",grid=none,width=80%]
-|===
-^| image::images/03_gitlab_pat_1.png[]
-^| Figure 1 - Gitlab PAT 1
-|===
-
-
-[cols="1a",grid=none,width=80%]
-|===
-^| image::images/03_gitlab_pat_2.png[]
-^| Figure 2 - Gitlab PAT 2
-|===

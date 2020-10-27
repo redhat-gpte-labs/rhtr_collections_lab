@@ -26,17 +26,3 @@
 :markup-in-source: verbatim,attributes,quotes
 :show_solution: true
 
-. Sign in to Red Hat Ansible tower Web UI *{TOWER_URL}* as `{TOWER_ADMIN_USER}` user and password `{TOWER_ADMIN_PASSWORD}`.
-
-. On the left side pane select *Jobs*.
-
-. You will be able to see job `{jobtemplate_prod}` ruuning. 
-
-. You will be to see job has been executed with *Playbook Run* *Webhook* action. 
-
-. Click on the `{jobtemplate_prod}` to see the details. 
-
-. Verify accessing the application using frontend web url `frontend.{GUID}.{OSP_DOMAIN}`.
-
-
-. Enter `root` in the box to then click `Submit`. 
