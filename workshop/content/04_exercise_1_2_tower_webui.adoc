@@ -1,9 +1,8 @@
 :GUID: %guid%
-:OSP_DOMAIN: %subdomain_base_suffix%
+:OSP_DOMAIN: dynamic.opentlc.com
 :GITLAB_URL: %gitlab_url%
 :GITLAB_USERNAME: %gitlab_username%
 :GITLAB_PASSWORD: %gitlab_password%
-:GITLAB_HOST: %gitlab_hostname%
 :TOWER_URL: %tower_url%
 :TOWER_ADMIN_USER: %tower_admin_user%
 :TOWER_ADMIN_PASSWORD: %tower_admin_password%
@@ -28,31 +27,20 @@
 :show_solution: true
 
 
+In this section, you will explore RedHat Ansible Tower Web UI and it's components.
 
+. Use the public IP address or DNS name to access the `tower` node.
 
-
-
-. Example for you how to use Variables in bash block
-
+. Sign in to the Ansible Tower web UI as the administrator using the *{TOWER_ADMIN_USER}*
+account and *{TOWER_ADMIN_PASSWORD}* as the password.
 +
-[source,bash,subs="attributes,verbatim"]
-----
-[devops@control 0 ~]$ cd $HOME
-[devops@control 0 ~]$ git clone git@{GITLAB_HOST}:ansible/gitops-lab.git
-----
-
-. Sample Output
-
+Open browser and type *{TOWER_URL}*
 +
-[source,bash,subs="attributes,verbatim"]
-----
-Cloning into 'gitops-lab'...
-Warning: Permanently added '{GITLAB_HOST},169.47.191.71' (ECDSA) to the list of known hosts.
-remote: Enumerating objects: 258, done.
-remote: Counting objects: 100% (258/258), done.
-remote: Compressing objects: 100% (110/110), done.
-remote: Total 258 (delta 116), reused 258 (delta 116), pack-reused 0
-Receiving objects: 100% (258/258), 236.04 KiB | 0 bytes/s, done.
-Resolving deltas: 100% (116/116), done.
-----
+
+[cols="1a",grid=none,width=80%]
+|===
+^| image::images/04_tower_login.png[]
+^| Figure 1 - Ansible Tower WebUI
+|===
+
 

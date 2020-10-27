@@ -26,8 +26,3 @@
 :markup-in-source: verbatim,attributes,quotes
 :show_solution: true
 
-
-. Example For you
-
- *{GITLAB_URL}*, Enter your login details `{GITLAB_USERNAME}` and `{GITLAB_PASSWORD}`, as provided.
-

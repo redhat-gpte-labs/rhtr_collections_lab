@@ -12,8 +12,13 @@ modules:
   04_exercise_1_2_tower_webui:
     name: Exercise 1.2 - Ansible Tower WebUI
     exit_sign: Exercise 1.3
+<<<<<<< HEAD:workshop/modules.yaml
+  04_exercise_1_3_explore_env:
+    name: Explore Env
+=======
   04_exercise_1_3_explore_environment:
     name: Exercise 1.3 - Explore your Environment
+>>>>>>> 36d66f5bea18ae40ea9189da2c776e6a6406aa15:modules.yaml
     exit_sign: Exercise 2.1
   04_exercise_2_1_gitlab_pat:
     name: Exercise 2.1 - Gitlab PAT
