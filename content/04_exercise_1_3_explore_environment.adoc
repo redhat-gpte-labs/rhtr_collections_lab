@@ -1,0 +1,96 @@
+=== Explore your environment
+
+Take a moment to explore your environment and setup up tools, shells, packages you like to use.
+You are on a Red Linux 7 control node, like many real world customers, with `ansible` and other tools and utilities installed.
+
+. If you are not already logged in as the `control` node's `devops` service account user, `sudo` to that account.
+
++
+[source,bash]
+----
+[my-user@control 0 ~]$ sudo su - devops
+----
++
+
+.Sample Output
+[source,texinfo]
+----
+Last login: Tue Oct 27 14:46:37 EDT 2020 on pts/0
+[devops@control 0 ~]$
+----
+
+. Explore your `ansible` setup
+
++
+[source,bash]
+----
+[devops@control 0 ~]$ ansible --version
+----
+
++
+.Sample Output
+[source,bash]
+----
+ansible 2.9.10
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/home/devops/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible
+  python version = 2.7.5 (default, Jun 11 2019, 14:33:56) [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+----
++
+
+Whilst this is the current, supported version, of `ansible` at this writing we'll want something more cutting edge to fully
+explore `collections` later.
+
+. Explore your lab environment
++
+
+[source,sh]
+----
+[devops@control 0 ~]$ ansible all --list-hosts
+----
++
+
+.Sample Output
+[source,texinfo]
+----
+
+  hosts (5):
+    app1.example.com
+    app2.example.com
+    appdb1.example.com
+    frontend1.example.com
+    tower.example.com
+----
+
+. Check you have a working `ssh` config and that `ansible` can connect
++
+
+[source,bash]
+----
+[devops@control 0 ~] $ ansible all -m ping
+----
++
+
+.Sample Output
+[source,texinfo]
+----
+app1.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+appdb1.example.com | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+
+... <TRUNCATED>
+----
+
