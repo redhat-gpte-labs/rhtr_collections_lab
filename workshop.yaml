@@ -1,5 +1,5 @@
 ---
-name: GitOps with RedHat Ansible Tower
+name: Collections Lab --- Please fix the names of exercises
 modules:
   activate:
     - 01_introduction
